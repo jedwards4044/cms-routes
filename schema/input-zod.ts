@@ -342,8 +342,72 @@ export const SubdomainInputSchema = z.object({
     subdomain: z.string().min(1),
 })
 
+/*-------- New Options  --------------------------------*/
+
+const Logos = z.object({
+    header: z.string().optional(),
+    footer: z.string().optional(),
+})
+
+const CustomOptions = z.object({
+    fonts: z
+        .array(
+            z.object({
+                key: z.string(),
+                count: z.number(),
+                isFirstPlace: z.boolean(),
+            })
+        )
+        .optional(),
+    code: ScriptsSchema.optional(),
+    headerCtaButtons: HeaderButtonsObj,
+    analytics: AnalyticsSchema.optional(),
+    customComponents: z.array(CustomComponentSchema).optional(),
+})
+
+const ContactData = z.object({
+    address: AddressSchema.optional(),
+    phoneNumber: z.string().optional(),
+    email: z.union([z.string().email(), z.literal('')]),
+})
+
+export const NewLandingInputSchema = z.object({
+    siteName: z.string(),
+    url: z.string(),
+    pageUri: z.string().optional(),
+    /*logo:z.string().optional(),*/
+    logos: Logos,
+    favicon: z.string().optional(),
+    /* phoneNumber: z.string().optional(),
+    address: AddressSchema.optional(),
+    email: z.union([z.string().email(), z.literal('')]), */
+    contactData: ContactData,
+    socials: SocialSchema.optional(),
+    seo: z.object({ global: SEOGlobalSchema }).optional(),
+    colors: ColorInputSchema,
+    title: z.string().optional(),
+    description: z.string().optional(),
+    page: PageSchema,
+
+    /* analytics: AnalyticsSchema.optional(),
+     fonts: z
+        .array(
+            z.object({
+                key: z.string(),
+                count: z.number(),
+                isFirstPlace: z.boolean(),
+            })
+        )
+        .optional(), 
+            headerCtaButtons: HeaderButtonsObj,
+    code: ScriptsSchema.optional(),
+    customComponents: z.array(CustomComponentSchema).optional(),*/
+    customOptions: CustomOptions,
+})
+
+/*---------------------Types---------------------------*/
 export type HeaderButtons = z.infer<typeof HeaderButtonsObj>
-export type LandingReq = z.infer<typeof LandingInputSchema>
+export type LandingReq = z.infer<typeof NewLandingInputSchema>
 export type CustomComponent = z.infer<typeof CustomComponentSchema>
 export type AiPageModules = z.infer<typeof pageModules>
 export type Sections = z.infer<typeof PageSectionSchema>

@@ -6,7 +6,9 @@ import { validateLandingRequestData } from '../../controllers/landing-controller
 const validExampleData = {
     siteName: 'Example Site',
     url: 'https://example.com',
-    email: 'example@example.com',
+    contactData: {
+        email: 'example@example.com',
+    },
     colors: {
         primary: '#000000',
         accent: '#FFFFFF',
@@ -23,6 +25,8 @@ const validExampleData = {
             },
         ],
     },
+    customOptions: {},
+    logos: {},
 }
 
 describe('validateLandingRequestData', () => {
@@ -37,7 +41,9 @@ describe('validateLandingRequestData', () => {
         const req = {
             body: {
                 ...validExampleData,
-                email: 'invalid-email',
+                contactData: {
+                    email: 'invalid-email',
+                },
             },
         }
 

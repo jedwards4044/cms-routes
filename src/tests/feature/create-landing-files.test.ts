@@ -8,7 +8,9 @@ import { CMSPagesSchema, SiteDataSchema } from '../../../schema/output-zod'
 const validExampleData: LandingReq = {
     siteName: 'Example Site',
     url: 'https://example.com',
-    email: 'example@example.com',
+    contactData: {
+        email: 'example@example.com',
+    },
     colors: {
         primary: '#000000',
         accent: '#FFFFFF',
@@ -25,6 +27,8 @@ const validExampleData: LandingReq = {
             },
         ],
     },
+    customOptions: {},
+    logos: {},
 }
 
 /* const validExampleData = {

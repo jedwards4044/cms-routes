@@ -1,0 +1,144 @@
+{
+    "siteName": "Example Site",
+    "url": "https://www.example.com",
+    "pageUri": "home",
+    "logos": {
+        "header": "https://townsquareignite.s3.us-east-1.amazonaws.com/landing-pages/clients/tacobell.com/images/selected/Tacobell.comLogo.png",
+        "footer": "https://www.example.com/logo-footer.png"
+    },
+    "favicon": "https://www.example.com/favicon.ico",
+    "contactData": {
+        "address": {
+            "zip": "",
+            "city": "",
+            "name": "",
+            "state": "",
+            "street": ""
+        },
+        "phoneNumber": "123-456-7890",
+        "email": "contact@example.com"
+    },
+    "socials": ["https://facebook.com/example", "https://twitter.com/example"],
+    "seo": {
+        "global": {
+            "aiosp_home_title": "Welcome to Example Site",
+            "aiosp_home_description": "This is the homepage of Example Site.",
+            "aiosp_google_verify": "1234567890abcdef"
+        }
+    },
+    "colors": {
+        "primary": "#ff0000",
+        "accent": "#00ff00",
+        "buttonHover": "#0000ff",
+        "footerBackground": "#ffffff",
+        "footerText": "#000000",
+        "headerBackground": "#f0f0f0",
+        "tertiary": "#ff00ff"
+    },
+    "title": "Home Page",
+    "description": "Welcome to the Example Site homepage.",
+    "page": {
+        "sections": [
+            {
+                "headline": "Top HVAC Services",
+                "subheader": "Reliable HVAC and Plumbing",
+                "ctaText": "Josh",
+                "ctaLink": "https://google.com",
+                "image": "https://townsquareignite.s3.us-east-1.amazonaws.com/landing-pages/clients/tacobell.com/images/selected/purpleButtonLogo.jpg",
+                "components": [
+                    {
+                        "type": "coupon",
+                        "image": "https://townsquareignite.s3.us-east-1.amazonaws.com/landing-pages/clients/tacobell.com/images/selected/powered_by_logo.svg"
+                    },
+                    {
+                        "type": "form",
+                        "embed": "",
+                        "contactFormTitle": "Contact Us"
+                    }
+                ],
+                "dataLayerEventBtn": "",
+                "dataLayerEventWrap": ""
+            },
+            {
+                "headline": "Josh",
+                "subheader": "Josh",
+                "desc": "With years of experience in the HVAC and plumbing industry, we understand the unique needs of homeowners. Our team of skilled technicians is dedicated to providing top-notch service to ensure your home's comfort and safety. We offer a range of services from maintenance to emergency repairs, all designed to keep your HVAC and plumbing systems running smoothly. 228-382-3323",
+                "desc2": "Our reputation for excellence is built on a foundation of trust and reliability. We understand that inviting a service technician into your home is a big decision, which is why we prioritize your peace of mind. All our technicians undergo rigorous background checks and continuous training to ensure they are up-to-date with the latest industry standards and practices. We use only the highest quality parts and materials, and our work is backed by comprehensive warranties for your assurance. Join the many satisfied homeowners who have chosen us for their HVAC and plumbing needs, and experience the difference that comes with exceptional service and dedication.",
+                "ctaText": "Josh",
+                "ctaLink": "https://google.com",
+                "components": [
+                    {
+                        "type": "video",
+                        "videoUrl": "https://www.youtube.com/watch?v=FbpEjVoWLNs"
+                    }
+                ],
+                "descLessText": "With years of experience in the HVAC and plumbing industry, we understand the unique needs of homeowners. Our team of skilled technicians is dedicated to providing top-notch service to ensure your home's comfort and safety. We offer a range of services from maintenance to emergency repairs, all designed to keep your HVAC and plumbing systems running smoothly.",
+                "descMoreText": "Our comprehensive HVAC services include installation, repair, and maintenance of heating and cooling systems to keep your home at the ideal temperature year-round. We use state-of-the-art technology and industry best practices to ensure every job is completed to the highest standards. Our plumbing services cover everything from minor fixes to major installations, with a focus on efficiency and reliability.",
+                "descMaxText": "As a homeowner, you know the importance of maintaining your HVAC and plumbing systems. Regular maintenance not only extends the life of your equipment but also enhances performance, saving you money on utilities in the long run. Our preventative maintenance plans are tailored to your specific needs, ensuring your systems are always in peak condition. We also offer 24/7 emergency services, because we understand that issues can arise at any time. From clogged drains to furnace malfunctions, our team is ready to respond quickly and effectively.",
+                "desc2LessText": "We pride ourselves on our commitment to customer satisfaction. From the moment you contact us until the job is completed, our goal is to exceed your expectations. Our technicians are courteous, professional, and always willing to go the extra mile to ensure your complete satisfaction. We believe in transparent pricing, so you'll never be surprised by hidden fees or unexpected costs.",
+                "desc2MoreText": "In addition to our exceptional service, we offer competitive pricing and flexible financing options to fit your budget. Our team is knowledgeable about the latest advancements in HVAC and plumbing technology, and we are always looking for ways to improve our services and offer the best solutions to our customers. Whether you need a quick fix or a comprehensive system overhaul, you can trust us to get the job done right.",
+                "desc2MaxText": "Our reputation for excellence is built on a foundation of trust and reliability. We understand that inviting a service technician into your home is a big decision, which is why we prioritize your peace of mind. All our technicians undergo rigorous background checks and continuous training to ensure they are up-to-date with the latest industry standards and practices. We use only the highest quality parts and materials, and our work is backed by comprehensive warranties for your assurance. Join the many satisfied homeowners who have chosen us for their HVAC and plumbing needs, and experience the difference that comes with exceptional service and dedication.",
+                "desc2Size": "desc2MaxText",
+                "dataLayerEventBtn": "",
+                "dataLayerEventWrap": ""
+            },
+            {
+                "headline": "Josh",
+                "ctaText": "Josh",
+                "ctaLink": "page2",
+                "reviewHeadline": "",
+                "reviews": [],
+                "dataLayerEventBtn": "",
+                "dataLayerEventWrap": ""
+            }
+        ]
+    },
+    "customOptions": {
+        "fonts": [
+            {
+                "key": "Arial",
+                "count": 5,
+                "isFirstPlace": true
+            },
+            {
+                "key": "Helvetica",
+                "count": 3,
+                "isFirstPlace": false
+            }
+        ],
+        "code": {
+            "header": "console.log('new test');",
+            "body": ""
+        },
+        "headerCtaButtons": {
+            "button1": {
+                "label": "btn1",
+                "link": "",
+                "dataLayerEvent": ""
+            },
+            "button2": {
+                "label": "btn2",
+                "link": "",
+                "dataLayerEvent": ""
+            }
+        },
+        "analytics": {
+            "gtmId": "GTM-TJCRGLN7",
+            "gaId": "G-J79MZ1H429"
+        },
+        "customComponents": [
+            {
+                "type": "Webchat",
+                "apiKey": ""
+            },
+            {
+                "type": "ScheduleEngine",
+                "apiKey": ""
+            },
+            {
+                "type": "BMP",
+                "apiKey": ""
+            }
+        ]
+    }
+}
